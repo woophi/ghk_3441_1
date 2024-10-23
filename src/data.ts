@@ -5,10 +5,140 @@ import sber from './assets/sber.png';
 import tbank from './assets/tbank.png';
 import yandex from './assets/yandex.png';
 
+export const dataSektors = [
+  {
+    Ticker: 'TCSG',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 6.6,
+        Trading_History: 6.8,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.5,
+        Dividends: 4.1,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.8,
+      },
+    ],
+  },
+  {
+    Ticker: 'YDEX',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 6.9,
+        Trading_History: 5.2,
+        Growth_Potential: 6.5,
+        Business_Indicators: 6.1,
+        Dividends: 3.7,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.1,
+      },
+    ],
+  },
+  {
+    Ticker: 'HEAD',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 7.4,
+        Trading_History: 7.5,
+        Growth_Potential: 4.6,
+        Business_Indicators: 6.5,
+        Dividends: 4.1,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.1,
+      },
+    ],
+  },
+  {
+    Ticker: 'ROSN',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 7.2,
+        Trading_History: 5.0,
+        Growth_Potential: 4.7,
+        Business_Indicators: 5.0,
+        Dividends: 5.5,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.1,
+      },
+    ],
+  },
+  {
+    Ticker: 'SBER',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 6.6,
+        Trading_History: 6.8,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.5,
+        Dividends: 4.8,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.1,
+      },
+    ],
+  },
+  {
+    Ticker: 'LKOH',
+    Type: [
+      {
+        Type: 'Сектор',
+        Stability: 7.2,
+        Trading_History: 5.0,
+        Growth_Potential: 4.7,
+        Business_Indicators: 5.0,
+        Dividends: 5.5,
+      },
+      {
+        Type: 'imoex',
+        Stability: 6.1,
+        Trading_History: 4.9,
+        Growth_Potential: 5.2,
+        Business_Indicators: 4.8,
+        Dividends: 4.1,
+      },
+    ],
+  },
+];
+
 export const data = [
   {
     img: hh,
     name: 'МКПАО “Хэдхантер”',
+    sectors: dataSektors.find(s => s.Ticker === 'HEAD'),
     Ticker: 'HEAD',
     Asset_Main_ID: 'RU000A107662',
     Publication_Date: '11.10.2024 0:00',
@@ -34,6 +164,7 @@ export const data = [
   {
     img: tbank,
     name: 'МКПАО ТКС Холдинг',
+    sectors: dataSektors.find(s => s.Ticker === 'TCSG'),
 
     Ticker: 'TCSG',
     Asset_Main_ID: 'RU000A107UL4',
@@ -60,6 +191,7 @@ export const data = [
   {
     img: lukoil,
     name: 'Лукойл',
+    sectors: dataSektors.find(s => s.Ticker === 'LKOH'),
     Ticker: 'LKOH',
     Asset_Main_ID: 'RU0009024277',
     Publication_Date: '11.10.2024 0:00',
@@ -85,6 +217,7 @@ export const data = [
   {
     img: rosneft,
     name: 'Роснефть',
+    sectors: dataSektors.find(s => s.Ticker === 'ROSN'),
     Ticker: 'ROSN',
     Asset_Main_ID: 'RU000A0J2Q06',
     Publication_Date: '11.10.2024 0:00',
@@ -110,6 +243,7 @@ export const data = [
   {
     img: sber,
     name: 'Сбербанк России',
+    sectors: dataSektors.find(s => s.Ticker === 'SBER'),
     Ticker: 'SBER',
     Asset_Main_ID: 'RU0009029540',
     Publication_Date: '11.10.2024 0:00',
@@ -135,6 +269,7 @@ export const data = [
   {
     img: yandex,
     name: 'МКПАО Яндекс а.о.',
+    sectors: dataSektors.find(s => s.Ticker === 'YDEX'),
     Ticker: 'YDEX',
     Asset_Main_ID: 'RU000A107T19',
     Publication_Date: '11.10.2024 0:00',

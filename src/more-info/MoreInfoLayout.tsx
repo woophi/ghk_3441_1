@@ -31,13 +31,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('Лукойл').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('Лукойл').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('Лукойл').Overall_Rating_n * 10,
         }}
       />
@@ -57,13 +53,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('Сбербанк России').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('Сбербанк России').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('Сбербанк России').Overall_Rating_n * 10,
         }}
       />
@@ -83,13 +75,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('Роснефть').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('Роснефть').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('Роснефть').Overall_Rating_n * 10,
         }}
       />
@@ -108,13 +96,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('МКПАО Яндекс а.о.').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('МКПАО Яндекс а.о.').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('МКПАО Яндекс а.о.').Overall_Rating_n * 10,
         }}
       />
@@ -134,13 +118,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('МКПАО ТКС Холдинг').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('МКПАО ТКС Холдинг').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('МКПАО ТКС Холдинг').Overall_Rating_n * 10,
         }}
       />
@@ -160,13 +140,9 @@ export const MoreInfoLayout = () => {
       <CompareProgress
         company={{
           value: selectByNameItem('МКПАО “Хэдхантер”').Overall_Rating_n * 10,
-          color: 'green',
           img: selectByNameItem('МКПАО “Хэдхантер”').img,
         }}
-        imoex={{ color: 'green', value: 65 }}
-        sector={{ color: 'green', value: 51 }}
         total={{
-          color: 'positive',
           value: selectByNameItem('МКПАО “Хэдхантер”').Overall_Rating_n * 10,
         }}
       />

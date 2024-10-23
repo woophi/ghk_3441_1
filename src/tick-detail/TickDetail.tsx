@@ -67,11 +67,14 @@ export const TickDeatil = ({ selectedItem }: Props) => {
         Потенциал роста
       </Typography.TitleResponsive>
       <CompareProgress
-        company={{ value: selectedItem.Growth_Potential_Score * 10, color: 'orange', img: selectedItem.img }}
-        imoex={{ color: 'gray', value: 65 }}
-        sector={{ color: 'orange', value: 51 }}
+        company={{ value: selectedItem.Growth_Potential_Score * 10, img: selectedItem.img }}
+        imoex={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'imoex')?.Growth_Potential ?? 0) * 10,
+        }}
+        sector={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'Сектор')?.Growth_Potential ?? 0) * 10,
+        }}
         total={{
-          color: 'attention',
           value: selectedItem.Growth_Potential_Score * 10,
         }}
       />
@@ -81,11 +84,14 @@ export const TickDeatil = ({ selectedItem }: Props) => {
         История торгов
       </Typography.TitleResponsive>
       <CompareProgress
-        company={{ value: selectedItem.Trading_History_Score * 10, color: 'orange', img: selectedItem.img }}
-        imoex={{ color: 'gray', value: 65 }}
-        sector={{ color: 'orange', value: 51 }}
+        company={{ value: selectedItem.Trading_History_Score * 10, img: selectedItem.img }}
+        imoex={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'imoex')?.Trading_History ?? 0) * 10,
+        }}
+        sector={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'Сектор')?.Trading_History ?? 0) * 10,
+        }}
         total={{
-          color: 'attention',
           value: selectedItem.Trading_History_Score * 10,
         }}
       />
@@ -95,11 +101,10 @@ export const TickDeatil = ({ selectedItem }: Props) => {
         Дивиденды
       </Typography.TitleResponsive>
       <CompareProgress
-        company={{ value: selectedItem.Dividend_Score * 10, color: 'orange', img: selectedItem.img }}
-        imoex={{ color: 'gray', value: 65 }}
-        sector={{ color: 'orange', value: 51 }}
+        company={{ value: selectedItem.Dividend_Score * 10, img: selectedItem.img }}
+        imoex={{ value: (selectedItem.sectors?.Type.find(t => t.Type === 'imoex')?.Dividends ?? 0) * 10 }}
+        sector={{ value: (selectedItem.sectors?.Type.find(t => t.Type === 'Сектор')?.Dividends ?? 0) * 10 }}
         total={{
-          color: 'attention',
           value: selectedItem.Dividend_Score * 10,
         }}
       />
@@ -111,13 +116,12 @@ export const TickDeatil = ({ selectedItem }: Props) => {
       <CompareProgress
         company={{
           value: selectedItem.Sustainability_Score * 10,
-          color: 'orange',
+
           img: selectedItem.img,
         }}
-        imoex={{ color: 'gray', value: 65 }}
-        sector={{ color: 'orange', value: 51 }}
+        imoex={{ value: (selectedItem.sectors?.Type.find(t => t.Type === 'imoex')?.Stability ?? 0) * 10 }}
+        sector={{ value: (selectedItem.sectors?.Type.find(t => t.Type === 'Сектор')?.Stability ?? 0) * 10 }}
         total={{
-          color: 'attention',
           value: selectedItem.Sustainability_Score * 10,
         }}
       />
@@ -129,13 +133,16 @@ export const TickDeatil = ({ selectedItem }: Props) => {
       <CompareProgress
         company={{
           value: selectedItem.Business_Performance_Score * 10,
-          color: 'orange',
+
           img: selectedItem.img,
         }}
-        imoex={{ color: 'gray', value: 65 }}
-        sector={{ color: 'orange', value: 51 }}
+        imoex={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'imoex')?.Business_Indicators ?? 0) * 10,
+        }}
+        sector={{
+          value: (selectedItem.sectors?.Type.find(t => t.Type === 'Сектор')?.Business_Indicators ?? 0) * 10,
+        }}
         total={{
-          color: 'attention',
           value: selectedItem.Business_Performance_Score * 10,
         }}
       />
