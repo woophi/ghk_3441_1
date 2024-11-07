@@ -36,7 +36,7 @@ export const CompareProgress = ({ total, sector, company, imoex }: Props) => {
       const imoexDot =
         (sector?.value ?? 0) - (imoex?.value ?? 0) > 50
           ? imoexValue
-          : imoexValue + ((imoex?.value ?? 0) > (sector?.value ?? 0) ? 40 : -35);
+          : imoexValue + ((imoex?.value ?? 0) > (sector?.value ?? 0) ? 35 : -20);
 
       setDotsPositons([sectorDot, companyDot, imoexDot]);
     }
@@ -51,7 +51,7 @@ export const CompareProgress = ({ total, sector, company, imoex }: Props) => {
       const imoexDot =
         (sector?.value ?? 0) - (imoex?.value ?? 0) > 50
           ? imoexValue
-          : imoexValue + ((imoex?.value ?? 0) > (sector?.value ?? 0) ? 40 : -35);
+          : imoexValue + ((imoex?.value ?? 0) > (sector?.value ?? 0) ? 35 : -20);
       setDotsPositons([sectorDot, companyDot, imoexDot]);
     }
   });
